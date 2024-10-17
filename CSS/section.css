@@ -1,0 +1,65 @@
+/* MARGIN */
+.margin{
+  width: 400px;
+  height: 400px;
+  background-color: red;
+
+        /* Margenes */
+/* margen en la parte SUPERIOR */
+  /* margin-top: 20px; */
+/* margen del lado DERECHO */
+  /* margin-right: 40px; */
+/* margen de la parte INFERIOR  */
+  /* margin-bottom: 20px; */
+/* margen del lado IZQUIERDO */
+  /* margin-left: 40px; */
+
+  /* manera comunde escribirlo */
+margin: 20px 20px 20px 20px;
+padding: 20px 20px 20px 20px;
+}
+
+/* PADDING */
+.padding section{
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  /* padding */
+
+  /* 
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+ */
+ padding: 20px 20px 20px 20px;
+}
+
+/* ejemplo de como seria utilizado el padding, el border y margin */
+ /* button */
+.ejemplo{
+width: 200px;
+height: 200px;
+background-color: black;
+padding: 20px 20px 20px 20px;
+margin: 20px 20px 20px 20px;
+}
+
+#button button{
+color: black;
+
+font-size: 20px;
+border: none;
+box-sizing: border-box;
+margin: 30px 30px 30px 30px;
+padding: 5px 5px 5px 5px;
+border-radius: 10px;
+}
+
+/* BORDER */
+#border{
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  
+}
