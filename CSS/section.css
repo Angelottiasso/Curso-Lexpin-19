@@ -63,3 +63,89 @@ border-radius: 10px;
   background-color: grey;
   
 }
+
+/* PSEUDO CLASS */
+
+/* link = nos permite modificar los estilos de un enlace no visitado */
+#pseudoclass a:link{
+  color: red;
+}
+
+/* visited = nos permite modificar los estilos de un enlace visitado */
+#pseudoclass a:visited{
+  color: green;
+}
+
+/* hover = nos permite modificar los estilos de un elemento cuando el cursor este por encima del elemento */
+#pseudoclass button:hover{
+  background-color: blueviolet;
+  color: black;
+  /* cursor */
+  cursor: pointer;
+}
+
+/* focus = nos permite modificar los estilos cuando el usuario este haciendo focus sobre el elemento */
+#pseudoclass input:focus{
+  background-color: grey;
+  color: black;
+}
+
+/* first-child (Primer hijo del elemento) */
+#pseudoclases2 p:first-child{
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+/* last-child (Ultimo hijo del elemento) */
+#pseudoclases2 p:last-child{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 255, 13);
+}
+
+/* nth-child(numero del hijo) */
+#pseudoclases2 p:nth-child(7){
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 0, 251);
+}
+
+#pseudoclases2 p:nth-child(5){
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(30, 0, 255);
+}
+
+/* PSEUDO ELEMENT */
+
+/* first-line (Afecta la primera linea) */
+
+#pseudoelement p::first-line{
+  color: red;
+  font-weight: bold;
+}
+
+/* first-letter (Afecta la primera letra) */
+
+#pseudoelement p::first-letter{
+  color: rgb(0, 4, 255);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* before (Antes) / after (Despues) */
+
+#pseudoelementos p::before{
+  content: "💯";
+}
+
+#pseudoelementos p::after{
+  content: "🦁";
+}
+
+/* pseudo elemento MARKER */
+
+#pseudoelement li::marker{
+content: ;
+}
