@@ -79,7 +79,7 @@ border-radius: 10px;
 /* hover = nos permite modificar los estilos de un elemento cuando el cursor este por encima del elemento */
 #pseudoclass button:hover{
   background-color: blueviolet;
-  color: black;
+  color: white;
   /* cursor */
   cursor: pointer;
 }
@@ -119,7 +119,7 @@ border-radius: 10px;
 
 /* PSEUDO ELEMENT */
 
-/* first-line (Afecta la primera linea) */
+/* first-line (Afecta la primera linea del texto) */
 
 #pseudoelement p::first-line{
   color: red;
@@ -136,16 +136,35 @@ border-radius: 10px;
 
 /* before (Antes) / after (Despues) */
 
-#pseudoelementos p::before{
+#pseudoelement p::before{
   content: "💯";
 }
 
-#pseudoelementos p::after{
+#pseudoelement p::after{
   content: "🦁";
 }
 
-/* pseudo elemento MARKER */
+/* pseudo elemento MARKER  */ 
+/* marker funciona con listas */
 
-#pseudoelement li::marker{
-content: ;
+#pseudoelement ul::marker{
+  content: "-";
+color: red;
+} 
+
+/* pseudo clases selection / funciona para modificar el estilo de selecion de un elemento */
+
+#pseudoelement p::selection{
+  background-color: black;
+  color: white;
 }
+
+/* BOX SHADOW */
+#boxshadow{
+  width: 200px;
+  height: 200px;
+  background-color: green;
+    /* box-shadow */
+/* primer valor: eje x / segundo valor: eje y / tercer valor: desenfoque / cuarto valor: color */
+box-shadow: 30px 30px 3px black;
+  }
